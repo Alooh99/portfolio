@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Space+Grotesk:wght@400;500;600;700&display=swap")
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lobster&family=Poppins:ital,wght@0,100;...&display=swap');
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slideAnimation {
+  display: flex;
+  animation: slideAnimation 20s linear infinite;
+}
+
+
+
+
+
+
+
+
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+  border: none;
+  outline: none;
+  border: 1px solid #FF4D00;
+}
+
+
+  
+  
+  nav a{
+    background-image: linear-gradient(
+      to right,
+      #31a6d0,
+      #3325cc 50%,
+      #e14f10 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a:before{
+    content: '';
+    background: #cd4514;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav a:hover {
+   background-position: 0;
+  }
+  
+  nav a:hover::before{
+    width: 100%;
+  }
+
+
+
+  
+
+ 
+   
+
+
+  
+  hr {
+      
+      margin-top: 15px;
+      width: 100%;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #e14f10, rgba(255, 255, 255, 0));
+      
+  }
+  
+
+  
+ 
+  
+ 
+
+
+
+
+  
+  
+  
+  
+
+
+  
+  .shadow-left-right {
+  box-shadow: 
+    -8px 0 40px rgba(0, 0, 0, 0.9),  
+     8px 0 40px rgba(0, 0, 0, 0.9);  
+}
+ 
+.app__bg {
+  background: url('./assets/footer.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+ 
