@@ -18,10 +18,9 @@ module.exports = {
         primary: "#00040f",
         secondary: "#00f6ff",
         dimWhite: "rgba(255, 255, 255, .7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
+        
       },
       fontFamily: {
-        mono: ['Monoton', 'ui-monospace', 'Space Grotesk', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
         bebas: ['"Bebas Neue"', 'sans-serif'],
         slab: ['"Alfa Slab One"', 'cursive'],
         lobster: ['"Lobster"', 'cursive'],

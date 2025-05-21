@@ -5,13 +5,11 @@ import { moreSkills } from '../constants';
 import { skillsImages } from '../constants';
 import { orangeLogo } from '../assets';
 
-
 const Skills = () => {
   const containerRef = useRef(null);
   const [dismissedCards, setDismissedCards] = useState([]);
 
   useEffect(() => {
-    
     const handleScroll = () => {
       const container = containerRef.current;
       if (!container) return;
@@ -33,18 +31,16 @@ const Skills = () => {
   const doubledImages = [...skillsImages, ...skillsImages];
 
   return (
-    <section className="w-full md:h-[100vh] h-[130vh] " id="skills">
-      
+    <section className="w-full md:h-screen h-[130vh]" id="skills">
       <div
         ref={containerRef}
         className="w-full h-full top-0 flex flex-col md:flex-row"
       >
         {/* LEFT: Cards */}
-        <div className="basis-1/2  bg-black md:py-8 py-0 flex flex-col justify-between items-center relative overflow-hidden">
-      <h1 className='font-lobster font-bold text-[#FF4D00] text-4xl sm:text-7xl'>Skills</h1>
+        <div className="basis-1/2 bg-black  md:py-20 py-0 flex flex-col justify-between items-center relative overflow-hidden">
+          <h1 className='font-lobster font-bold text-[#FF4D00] text-4xl sm:text-7xl'>Skills</h1>
           {moreSkills.map((skill, index) => {
             const isDismissed = dismissedCards.includes(index);
-            
             return (
               <motion.div
                 key={skill.id}
@@ -65,7 +61,7 @@ const Skills = () => {
                         opacity: 0,
                         scale: 0.8,
                       }
-                      : {
+                    : {
                         x: '-50%',
                         y: '-50%',
                         rotate: index * 2,
@@ -73,41 +69,42 @@ const Skills = () => {
                         opacity: 1,
                         scale: 1,
                       }
-                    }
-                    transition={{ duration: 0.6, ease: 'easeInOut' }}
-                    onClick={() => handleCardClick(index)}
-                    >
+                }
+                transition={{ duration: 0.6, ease: 'easeInOut' }}
+                onClick={() => handleCardClick(index)}
+              >
                 <Services {...skill} index={index} />
               </motion.div>
             );
           })}
-{dismissedCards.length === moreSkills.length ? (
-  <h1 className="text-center sm:text-[40px] text-[30px] font-bebas text-white">Now Scroll</h1>
-) : (
-  <h1 className="text-center sm:text-[40px] text-[30px] font-bebas text-white">Click Cards</h1>
-)}        </div>
+          {dismissedCards.length === moreSkills.length ? (
+            <h1 className="text-center text-2xl sm:text-4xl font-bebas text-white">Now Scroll</h1>
+          ) : (
+            <h1 className="text-center text-2xl sm:text-4xl font-bebas text-white">Click Cards</h1>
+          )}
+        </div>
 
-       
-        
-        <div  className="basis-1/2  sm:rounded-l-2xl rounded-none flex items-center overflow-hidden relative">
-<div
-  style={{ backgroundImage: `url(${orangeLogo})` }}
-  className="
-    absolute 
-    w-full 
-    h-full 
-    bg-center 
-    bg-no-repeat 
-    bg-cover 
-    opacity-10 
-    sm:h-[400px] 
-    md:h-[500px] 
-    lg:h-[600px]
-  "
-></div>          <div className="flex slideAnimation shadow-left-right bg-black p-2">
+        {/* RIGHT: Logos Slider */}
+        <div className="basis-1/2 sm:rounded-l-2xl rounded-none flex items-center overflow-hidden relative">
+          <div
+            style={{ backgroundImage: `url(${orangeLogo})` }}
+            className="
+              absolute 
+              w-full 
+              h-full 
+              bg-center 
+              bg-no-repeat 
+              bg-cover 
+              opacity-10 
+              sm:h-96
+              md:h-[32rem] 
+              lg:h-[36rem]
+            "
+          ></div>
+          <div className="flex slideAnimation shadow-left-right bg-black p-2">
             {doubledImages.map((image, index) => (
-              <div key={index} className="px-[2rem]">
-                <img className="sm:w-[100px] w-[60px] mr-[90px]" src={image.img} alt={image.alt} />
+              <div key={index} className="px-8">
+                <img className="sm:w-24 w-16 mr-24" src={image.img} alt={image.alt} />
               </div>
             ))}
           </div>
@@ -118,27 +115,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -81,11 +81,13 @@ export const moreSkills = [
 
 export const projects = [
   {image: weather,
+    title: 'Weather App',
     description: 'A project where I solidified my skills in TypeScript and API communication while delivering a polished, modern user interface.',
     icon: [nextjs, tailwind, typescript],
     link: 'https://weather-app-one-tan-47.vercel.app/'
   },
   {image: tsuragi,
+    title: 'Japanese Resturant',
     description: 'A personal project designed to improve my front-end workflow in React while crafting a sleek restaurant interface with a focus on real-world usability.',
     icon: [react, css],
     link: 'http://tsuragi-restaurant.vercel.app/'

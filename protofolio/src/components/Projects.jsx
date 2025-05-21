@@ -8,18 +8,22 @@ const cardVariants = {
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-black min-h-screen w-full flex flex-col items-center py-10 px-4">
-      
+    <section
+      id="projects"
+      className="bg-black min-h-screen w-full flex flex-col items-center py-10 px-4"
+    >
       <h1 className="font-lobster font-bold text-center text-[#FF4D00] text-4xl sm:text-7xl">
         Projects
       </h1>
 
       {/* Card Grid */}
-      <div className="mt-12 grid gap-8 w-full max-w-6xl
-                      grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        className="mt-12 grid gap-8 w-full max-w-6xl
+                  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+      >
         {projects.map((project, idx) => (
           <motion.div
-            key={project.id}
+            key={project.id || `project-${idx}`}
             custom={idx}
             variants={cardVariants}
             initial="initial"
@@ -29,24 +33,24 @@ const Projects = () => {
             className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl hover:shadow-2xl transition-shadow
                        overflow-hidden flex flex-col p-6 space-y-4"
           >
-            
             <img
               src={project.image}
               alt={project.title || "project image"}
-              className="w-full h-65 object-cover rounded-lg"
+              className="w-full h-[400px] object-contain rounded-lg"
             />
+            <h2 className="sm:text-3xl text-2xl text-center font-slab text-[#FF4D00] ">
+              {project.title}
+            </h2>
 
-         
-            <p className="text-lg font-bebas text-white leading-relaxed">
+            <p className="text-sm sm:text-base md:text-lg font-sans text-center text-white leading-relaxed mx-auto max-w-[90%] sm:max-w-sm md:max-w-md">
               {project.description}
             </p>
 
-        
             {project.icon && (
-              <div className="flex flex-wrap gap-3 pt-2">
+              <div className="flex justify-center flex-wrap gap-3 pt-2">
                 {project.icon.map((icon, i) => (
                   <img
-                    key={i}
+                    key={`${icon}-${i}`}
                     src={icon}
                     alt="tech icon"
                     className="w-7 h-7"
@@ -55,7 +59,6 @@ const Projects = () => {
               </div>
             )}
 
-            
             {project.link && (
               <a
                 href={project.link}
