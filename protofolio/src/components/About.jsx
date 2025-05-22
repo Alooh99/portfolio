@@ -2,12 +2,15 @@ import { motion } from 'framer-motion';
 import { blacklogo } from '../assets';
 
 const About = () => (
-  <section id='about' className='w-full overflow-hidden flex items-center sm:mt-10 mt-14'>
-    <div className='flex flex-row sm:flex-row w-full h-full'>
+  <section
+    id='about'
+    className='w-full flex flex-col sm:flex-row items-stretch sm:mt-10 mt-14'
+  >
+    <div className='flex flex-col sm:flex-row w-full'>
 
       {/* Left Section */}
       <motion.div
-        className='bg-[#FF4D00]/30 sm:w-1/2 w-full sm:rounded-r-xl rounded-none h-screen'
+        className='bg-[#FF4D00]/30 sm:w-1/2 w-full sm:rounded-r-xl rounded-none'
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
@@ -40,7 +43,7 @@ const About = () => (
 
       {/* Right Section */}
       <motion.div
-        className='bg-black w-full h-screen'
+        className='bg-black w-full'
         initial={{ x: 200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
@@ -55,7 +58,7 @@ const About = () => (
             Me.
           </motion.h1>
 
-          <div className='max-w-3xl sm:text-lg sm:leading-7 leading-5 text-xs font-bold font-poppins mt-14 mx-4 capitalize'>
+          <div className='max-w-3xl text-sm sm:text-base md:text-lg leading-5 sm:leading-7 font-bold font-poppins mt-14 mx-4 capitalize'>
             {[
               "My web development journey began during the COVID-19 lockdown, when I first discovered the world of programming through HTML, CSS, and JavaScript. What started as a curiosity quickly turned into a passion — I was fascinated by the power of code to bring ideas to life on the web.",
               "As I deepened my skills, I moved on to modern technologies like React.js and Next.js, which allowed me to build more dynamic and professional websites. I’ve been continuously learning and improving my skills with a strong focus on creating clean, user-friendly interfaces.",

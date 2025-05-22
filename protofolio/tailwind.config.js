@@ -15,8 +15,7 @@ module.exports = {
     'flip-3s': 'flip 3s ease-in-out infinite',
   },
       colors: {
-        primary: "#00040f",
-        secondary: "#00f6ff",
+       
         dimWhite: "rgba(255, 255, 255, .7)",
         
       },
@@ -27,15 +26,17 @@ module.exports = {
         poppins: ['"Poppins"', 'sans-serif'],
       },
     },
-    screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1060px",
-      lg: "1200px",
-      xl: "1700px",
+   screens: {
+         xs: "480px",
+        ss: "620px",
+        sm: "640px",  
+        md: "768px",  
+        lg: "1024px", 
+        xl: "1280px", 
+        "2xl": "1536px",
+        "3xl": "1700px" 
+      },
     },
-  },
   plugins: [
     require('@tailwindcss/typography'),
   ],

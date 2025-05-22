@@ -2,7 +2,7 @@ const styles = {
     boxWidth: "xl:max-w-[1400px] w-full",
     orange: "text-[#FF4D00]",
     orange2: "text-[#fa7b45]",
-    heading2: "font-Monoton font-semibold xs:text-[58px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] ",
+    heading2: "font-lobster font-semibold xs:text-[58px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] ",
     paragraph: "font-lobster  text-dimWhite sm:text-[25px] text-[20px] leading-[35.8px]",
   
     flexCenter: "flex justify-center items-center",
