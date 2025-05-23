@@ -34,7 +34,7 @@ const Navbar = () => {
 
         {/* Mobile Sidebar */}
         <div
-          className={`fixed z-40 top-0 left-0 w-full h-[50vh] bg-black/70 backdrop-blur-sm transform transition-transform duration-300 ease-in-out ${
+          className={`fixed z-40 top-0 left-0 w-full h-[100vh] bg-black/70 backdrop-blur-sm transform transition-transform duration-300 ease-in-out ${
             isOpen ? 'translate-x-0' : '-translate-x-full'
           } sm:hidden flex flex-col items-center justify-center `}
         >

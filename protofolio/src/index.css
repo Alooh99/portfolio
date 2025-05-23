@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lobster&family=Poppins:wght@300;400;600&display=swap');
 
 
 
@@ -21,7 +22,7 @@
 
 .slideAnimation {
   display: flex;
-  animation: slideAnimation 20s linear infinite;
+  animation: slideAnimation 10s linear infinite;
 }
 
 

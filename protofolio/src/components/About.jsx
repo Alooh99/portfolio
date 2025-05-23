@@ -3,18 +3,18 @@ import { blacklogo } from '../assets';
 
 const About = () => (
   <section id='about' className='w-full overflow-hidden flex items-center sm:mt-10 mt-14'>
-    <div className='flex flex-row sm:flex-row w-full h-full'>
+    <div className='flex flex-col sm:flex-row w-full h-full'>
 
       {/* Left Section */}
       <motion.div
-        className='bg-[#FF4D00]/30 sm:w-1/2 w-full sm:rounded-r-xl rounded-none '
+        className='bg-[#FF4D00]/30 sm:w-1/2 w-1- sm:rounded-r-xl rounded-none '
         initial={{ x: -200, opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease: 'easeOut' }}
       >
-        <div className='w-full my-12 flex flex-col items-end pr-6'>
+        <div className='w-full my-10 flex sm:flex-col flex-row items-end pr-6'>
           <motion.h1
-            className='font-lobster font-bold text-black text-4xl sm:text-7xl'
+            className='font-lobster font-bold pl-6 text-black text-4xl sm:text-7xl'
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -22,13 +22,13 @@ const About = () => (
             About
           </motion.h1>
 
-          <div className='flex flex-col items-center'>
+          <div className='flex sm:flex-col flex-row sm:items-center items-end '>
             {[0.6, 0.5, 0.4].map((opacity, i) => (
               <motion.img
                 key={i}
                 src={blacklogo}
                 alt='my website logo'
-                className='mt-10 w-32 h-32 m-0 p-0'
+                className='sm:mt-10 mt-0 sm:flex hidden sm:w-32 w-28 sm:h-32 h-28 m-0 p-0'
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1, opacity }}
                 transition={{ delay: 0.3 * i, duration: 0.6 }}

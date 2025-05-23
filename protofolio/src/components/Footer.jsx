@@ -11,7 +11,7 @@ const Footer = () => {
               <h1 className="font-lobster text-4xl sm:text-7xl text-[#FF4D00] font-bold capitalize">
                 Contact Me
               </h1>
-              <p className="max-w-sm md:text-xl text-lg leading-7 font-slab text-center mt-6">
+              <p className="max-w-sm md:text-xl text-lg leading-7 font-poppins font-light text-center mt-6">
                 Have a project in mind or just want to connect? I'm always open to new opportunities and collaborations. Let's build something great together.
               </p>
               <a href="mailto:Alooh99@hotmail.com">
@@ -22,7 +22,7 @@ const Footer = () => {
 
               {/* Social Links */}
               <div className="mt-6 md:mt-8">
-                <h3 className="text-white text-center font-bold font-lobster text-2xl">Follow us</h3>
+                <h3 className="text-white text-center  font-lobster text-2xl">Follow us</h3>
                 <div className="mt-7">
                   <Links />
                 </div>
@@ -35,8 +35,8 @@ const Footer = () => {
 
             {/* Right Column */}
             <div className="mt-10 lg:w-1/2 lg:mx-6">
-              <div className="w-full p-8 mx-auto bg-white/70 dark:bg-white/5 backdrop-blur-md shadow-[0_10px_25px_rgba(0,0,0,0.1)] border border-gray-200 dark:border-gray-700 rounded-2xl lg:max-w-xl">
-                <h2 className="text-2xl font-poppins font-semibold text-gray-800 dark:text-white">
+              <div className="w-full font-poppins p-8 mx-auto  bg-white/5 backdrop-blur-md shadow-[0_10px_25px_rgba(0,0,0,0.1)] border border-gray-200 dark:border-gray-700 rounded-2xl lg:max-w-xl">
+                <h2 className="text-2xl  font-semibold text-gray-800 dark:text-white">
                   Let's Connect
                 </h2>
                 <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">

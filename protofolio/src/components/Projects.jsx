@@ -38,7 +38,7 @@ const Projects = () => {
               alt={project.title || "project image"}
               className="w-full h-[400px] object-contain rounded-lg"
             />
-            <h2 className="sm:text-3xl text-2xl text-center font-slab text-[#FF4D00] ">
+            <h2 className="sm:text-2xl text-xl text-center font-slab text-[#FF4D00] ">
               {project.title}
             </h2>
 
