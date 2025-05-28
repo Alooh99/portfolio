@@ -1,4 +1,4 @@
-import { html, css, js, react, tailwind, typescript, nextjs, figma, intractivefrontend, responsive, support, dot, weather, tsuragi } from '../assets';
+import { html, css, js, react, tailwind, typescript, nextjs, figma, intractivefrontend, responsive, support, dot, weather, tsuragi, calculator } from '../assets';
 
 export const navLinks = [
   {
@@ -91,5 +91,11 @@ export const projects = [
     description: 'A personal project designed to improve my front-end workflow in React while crafting a sleek restaurant interface with a focus on real-world usability.',
     icon: [react, css],
     link: 'http://tsuragi-restaurant.vercel.app/'
+  },
+  {image: calculator,
+    title: 'Calculator App',
+    description: 'A responsive calculator built using HTML, CSS, and JavaScript to sharpen my front-end development skills through practical logic implementation.',
+    icon: [html, css,js],
+    link: 'https://calculator-app-omega-olive.vercel.app/'
   }
 ]

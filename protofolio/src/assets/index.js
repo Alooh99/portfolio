@@ -23,6 +23,7 @@ import orangeLogo from "./orangeLogo.png"
 import tsuragi from "./tsuragi.png"
 import weather from "./weather.png"
 import footer from "./footer.png"
+import calculator from "./calculator.png"
 
 
 export{
@@ -50,4 +51,5 @@ blacklogo,
     tsuragi,
     weather,
     footer,
+    calculator,
 };
